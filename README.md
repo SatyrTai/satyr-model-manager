@@ -1,5 +1,5 @@
 # satyr-model-manager
-
+Get trigger words, Most trained tags, model manager.
 an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
 #👌 <-- Completed
