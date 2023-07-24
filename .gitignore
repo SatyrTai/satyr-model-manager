@@ -9,4 +9,4 @@
 
 /web/css/testing.css
 
-*.pyc
+__pycache__/
