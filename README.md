@@ -66,8 +66,6 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
       <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
       </details>
    </li>
-
-
    
    </ul>
 
@@ -76,15 +74,42 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
       
    <li>
       <details>
+      <summary>Get Start (Must run as extension once)</summary>
+      <ul>
+         <li>Run once as an extension to gather model path information recognized by the webui</li>
+         <li>Windows OS : Double Click the satyr-model-manager.bat</li>
+         <li>macOS and linux : Double Click the satyr-model-manager.sh(converted by chatgpt from .bat <- never tested🤣)</li>
+      </ul>
+      </details>
+   </li>
+   
+   <li>
+      <details>
       <summary>Download Model From Civitai</summary>
       <ul>
          <li>Copy(Ctrl+C) the Model page URL from your browser such as https://civitai.com/models/71961/fast-negative-embedding-fastnegativev2</li>
          <li>Paste(Ctrl+V) the Model page URL to the page and enter.</li>
          <li>Download Card show up and it is downloading</li>
+         <li>Model is automatic located to path recognized by webui</li>
       </ul>
       <picture>
          <img src="/web/imgs/no-preview.jpg" width="350">
       </picture>
+      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      </details>
+   </li>
+   
+   <li>
+      <details>
+      <summary>Download images provided by creator</summary>
+      <ul>
+         <li>Click bottom right notice card to open popup window</li>
+         <li>Click the checkbox of the target image</li>
+         <li>Click "Apply Changes" button top left of popup window</li>
+         <li>The downloaded image is located next to the model</li>
+      </ul>
+      <br>
+      <picture><img src="/web/imgs/no-preview.jpg" width="350"></picture>
       <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
       </details>
    </li>
