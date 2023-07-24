@@ -79,6 +79,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>Run once as an extension to gather model path information recognized by the webui</li>
          <li>Windows OS : Double Click the satyr-model-manager.bat</li>
          <li>macOS and linux : Double Click the satyr-model-manager.sh(converted by chatgpt from .bat <- never tested🤣)</li>
+         <li>By Default localhost will be [127.0.0.1/8762](http://127.0.0.1:8762/)</li>
       </ul>
       </details>
    </li>
