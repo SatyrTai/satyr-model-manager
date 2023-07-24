@@ -1,0 +1,34 @@
+
+.Model_Info {
+	display: flex;
+	flex-direction: column;
+	flex-flow: row;
+	padding: 3px;
+	margin: 3px;
+	overflow: auto;
+}
+
+.Model_Info > div > p {
+	color: white;
+	padding: 3px;
+	margin: 3px;
+	font-weight: bolder;
+}
+
+.Model_Info > div > button {
+	padding: 5px;
+	margin: 2px;
+	border: none;
+	border-radius: 5px;
+	font-weight: bolder;
+	cursor: pointer;
+	color: black;
+	background-color: white;
+}
+
+.Model_Info > div > button:hover {
+	color:aquamarine;
+	background-color: rgb(32,32,32);
+}
+
+

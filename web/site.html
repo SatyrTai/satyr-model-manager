@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SatyrManager</title>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		
+		<link rel="icon" type="image/x-icon" href="web/imgs/Satyr_manager.ico">
+		<link rel="stylesheet" href="/web/css/notice_pack.css">
+		<link rel="stylesheet" href="/web/css/animation_pack.css">
+		<link rel="stylesheet" href="/web/css/main.css">
+		
+		<script src="/javascript/civitai_utils.js"></script>
+		<script src="/javascript/utils.js"></script>
+		<script src="/javascript/notice_pack.js"></script>
+		<script src="/web/javascript/object_panel.js"></script>
+		<script src="/web/javascript/download_page.js"></script>
+		<script src="/web/javascript/card_manager.js"></script>
+		<script src="/web/javascript/control_container.js"></script>
+		<script src="/web/javascript/settings.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+	</head>
+	<body class="disable_scrollbar">
+		<div id="page_content">
+			<!--cards-->
+			<div id="download_page" class="disable_user_selection">
+				<div id="card_info_panel">
+					<button id="card_info_panel_close_button"><i class="material-icons">close</i></button>
+					<div class="disable_scrollbar">
+						<div id="card_info_panel_controllers">
+							<button class="material-icons animation_pack_setup_switches animation_pack_scale_up animation_pack_off"
+								id="card_info_panel_web" title="Visite the site">web</button>
+								<button class="material-icons animation_pack_setup_switches animation_pack_scale_up animation_pack_off"
+									id="card_info_panel_explorer_button" title="explorer">folder_open</button>
+							<button class="animation_pack_setup_switches animation_pack_scale_up animation_pack_off"
+								id="card_info_panel_apply" title="Apply Changes">Apply Changes</button>
+							<button class="animation_pack_setup_switches animation_pack_scale_up animation_pack_off"
+								id="card_info_panel_retry" title="Retry all failed downloads">Retry all failed downloads</button>
+						</div>
+						<div id="card_info_panel_error_fixer">
+							<!--TODO-->
+						</div>
+						<div id="card_info_panel_basic_info">
+							<div>
+								<div>
+									<p>pageId : </p>
+									<input type="text" id="card_info_panel_pageId" readonly>
+								</div>
+								<div>
+									<p>version_id : </p>
+									<input type="text" id="card_info_panel_version_id" readonly>
+								</div>
+							</div>
+		
+							<div>
+								<div>
+									<p>version_main_name : </p>
+									<input type="text" id="card_info_panel_version_main_name">
+								</div>
+								<div>
+									<p>path : </p>
+									<input type="text" id="card_info_panel_path">
+								</div>
+							</div>
+						<!--
+							<div>
+								<div>
+									<p>max_image_count : </p>
+									<input type="number" id="card_info_panel_max_image_count">
+								</div>
+								<div>
+									<p>max_scale_image : </p>
+									<input type="checkbox" id="card_info_panel_max_scale_image">
+								</div>
+							</div>
+		
+							<div>
+								<div>
+									<p>save_api_json : </p>
+									<input type="checkbox" id="card_info_panel_save_api_json">
+								</div>
+							</div>
+						-->
+						</div>
+						<div id="card_info_panel_version_info">
+							<p>files</p>
+							<div id="card_info_panel_version_info_files"></div>
+							<p>images</p>
+							<input type="range" id="card_info_panel_all_images_scale">
+							<div id="card_info_panel_version_info_images"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="card_main disable_user_selection disable_scrollbar" id="cards"></div>
+
+				<form id="input_panel" onsubmit="if(this.reportValidity()){download_page_input_panel_from(this);}return false;">
+					<input type="url" id="input_panel_url" 
+						placeholder="Copy the URL paste it here and 'Enter'" 
+						autocomplete="off" 
+						onfocus="this.value=''" required
+					>
+					<div class="animation_pack_setup_switches animation_pack_scale animation_pack_off">
+						<input type="checkbox" id="input_panel_all_version">
+						<label for="input_panel_all_version">all_version</label>
+					</div>
+					<div class="animation_pack_setup_switches animation_pack_scale animation_pack_off">
+						<input type="checkbox" id="input_panel_save_api_json" title="Save apiJson in local device">
+						<label for="input_panel_save_api_json">save_api_json</label>
+					</div>
+					<div>
+						<input type="number" id="input_panel_preview_max_width" title="Preview max width">
+						<label for="input_panel_preview_max_width">px</label>
+					</div>
+				</form>
+			</div>
+			<!--options-->
+			<div class="control_container disable_user_selection">
+				<div class="control_container_utils">
+					<button class="glow animation_pack_scale_up animation_pack_on" id="power_settings_new" title="trun off application and close this tab."
+					type="button" onclick="power_settings_new_onclick(this)">
+						<i class="material-icons">power_settings_new</i>
+					</button>
+					<button class="glow animation_pack_scale animation_pack_on" id="settings" title="open/close setting panel"
+					type="button" onclick="settings_onclick(this)">
+						<i class="material-icons">settings</i>
+					</button>
+					<button class="animation_pack_scale_up animation_pack_on" id="bug_report" title="bug report (not support for now)"
+					type="button" onclick="bug_report_onclick(this)">
+						<i class="material-icons">bug_report</i>
+					</button>
+					<button class="animation_pack_scale_up animation_pack_on" id="card_giftcard" title="i'm starving give me food &#x1F372;"
+					type="button" onclick="card_giftcard_onclick(this)">
+						<i class="material-icons">card_giftcard</i>
+					</button>
+					<button class="glow animation_pack_scale animation_pack_off" id="autorenew" title="on/off autoUpdate"
+					type="button" onclick="autorenew_onclick(this)">
+						<i class="material-icons animation_pack_rotation animation_pack_off">autorenew</i>
+					</button>
+					<button class="glow animation_pack_scale animation_pack_off" id="file_download" title="on/off all download"
+					type="button" onclick="file_download_onclick(this)">
+						<i class="material-icons">file_download</i>
+					</button>
+
+					<button class="glow animation_pack_scale animation_pack_off" id="animation_on_off" title="on/off animations"
+					type="button" onclick="animation_on_off_onclick(this)">
+						<i class="material-icons">play_circle_outline</i>
+					</button>
+
+					<div class="control_container_card_size">
+						<input id="input_range_card_size" 
+							type="range" min="5" max="100" value="20"
+							orient="vertical" 
+							oninput="input_range_card_size_oninput(this.value)"
+							onfocus="input_range_card_size_onfocus(this.value)">
+						</input>
+						<div><output id="range_value"></output></div>
+					</div>
+				</div>
+			</div>
+			<!--support info-->
+			<form class="settings_container disable_user_selection" onsubmit="sendSettings();document.getElementById('settings').onclick();return false;">
+				<div id="settings_main_panel"></div>
+				<div class="settings_control_panel">
+					<input type="button" value="Reset" onclick="objectPanel.reset()">
+					<input type="submit" value="Save">
+				</div>
+			</form>
+		</div>
+		<script src="/web/javascript/animation_pack.js"></script>
+		<script src="/web/javascript/init.js"></script>
+	</body>
+</html>
+
+<!--
+	GOOGLE ICONS
+		https://developers.google.com/fonts/docs/material_icons?hl=zh-tw
+		https://fonts.google.com/about
+		https://www.apache.org/licenses/LICENSE-2.0.txt
+		https://www.w3schools.com/icons/icons_reference.asp
+		NOTE : 
+		https://www.w3schools.com/charsets/ref_emoji_smileys.asp
+		https://unicode.org/emoji/charts/full-emoji-list.html
+		NOTE : must be 6 char
+		so, 1F372 == x1F372
+		&#x1F372;
+
+	SUB MODEL
+		https://www.w3schools.com/howto/howto_css_modals.asp
+	HTML-add new tag by javascript
+		https://www.w3schools.com/jsref/met_document_createattribute.asp
+	img lazy loading
+		https://imagekit.io/blog/lazy-loading-images-complete-guide/
+	STOP Animation
+		https://css-tricks.com/how-to-play-and-pause-css-animations-with-css-custom-properties/
+	loader
+		https://www.w3schools.com/howto/howto_css_loader.asp
+	TAG
+		https://www.w3schools.com/howto/howto_css_badge.asp
+	https://www.w3schools.com/css/css3_variables.asp
+	https://codepen.io/josetxu/pen/XWqMJpN
+	https://freefrontend.com/css-glow-effects/
+	https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered
+
+	HTML inside HTML
+	https://www.w3schools.com/html/html_object.asp
+-->

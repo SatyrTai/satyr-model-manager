@@ -1,0 +1,55 @@
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "disables.css";
+@import "control_container.css";
+@import "settings.css";
+@import "download_page.css";
+/*
+@import "easy_json_display.css";
+*/
+
+:root {
+	--background-color:#DDD;
+	--card-size:50%;
+	--card-border-size:1vmin;
+	--card-border-size-half:calc(var(--card-border-size) / 2);
+	--card-border-size-quarter:calc(var(--card-border-size) / 4);
+	--card-calc-size:calc(var(--card-size) - calc(var(--card-border-size) * 2));
+	--card-max-size-width: calc(33% - calc(var(--card-border-size) * 2));
+	--card-max-size-height: calc(100% - calc(var(--card-border-size) * 2));
+	--main-gap:calc(var(--card-border-size) * 2);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#page_content {
+	width: 100%;
+	height: 100%;
+
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	flex-flow: row;
+
+	gap: var(--card-border-size);
+	padding: var(--card-border-size);
+	/*https://www.color-hex.com/color-palette/98179*/
+	background-color: #999;
+	overflow: auto;
+}
+

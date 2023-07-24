@@ -1,0 +1,199 @@
+#card_info_panel {
+	position: absolute; 
+	left: 0; 
+	right: 0; 
+	top: 0;
+	bottom: 0; 
+	border: none;
+	border-radius: var(--card-border-size);
+	display: none; /*initial*/
+	padding: 3vmin;
+
+	z-index: 998;
+	
+	background-color: rgba(0, 0, 0, 0.6);
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+}
+#card_info_panel p {
+	font-weight: bold;
+	font-size: larger;
+}
+#card_info_panel > div {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+#card_info_panel > button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	border: none;
+	color: whitesmoke;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	margin: var(--card-border-size-half);
+	padding: var(--card-border-size-half);
+	border-radius: 25%;
+	background-color:rgba(64, 64, 64, 0.75);
+	z-index: 999;
+}
+#card_info_panel_basic_info {
+	border-top: 2px dashed rgba(0, 0, 0, 0.6);
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+#card_info_panel_basic_info * , #card_info_panel p {
+	color:rgb(255, 255, 255);
+	padding: var(--card-border-size);
+}
+#card_info_panel input {
+	border: none;
+	background-color: rgb(36, 36, 36);
+	border-radius: var(--card-border-size);
+	min-width: 3vmin;
+	min-height: 3vmin;
+}
+#card_info_panel_controllers {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	z-index: 900;
+	display: flex;
+	flex-flow: row;
+	width: fit-content;
+	max-width: 100%;
+	height: fit-content;
+	border-radius: 3px;
+	background-color: rgb(36, 36, 36);
+	margin: 1vmin;
+	padding: 1vmin;
+	gap: 1vmin;
+	text-align-last: justify;
+}
+#card_info_panel_controllers > button {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	border: none;
+	color: whitesmoke;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	padding: var(--card-border-size-half);
+	border-radius: inherit;
+	text-align: center;
+	font-weight: bolder;
+	background-color:rgb(32, 105, 134);
+}
+#card_info_panel_controllers > #card_info_panel_retry {
+	background-color:rgb(134, 32, 32);
+}
+
+#card_info_panel_basic_info div {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-flow: row;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	justify-content: flex-start;
+	width: fit-content;
+	height: fit-content;
+	gap: var(--card-border-size);
+}
+
+#card_info_panel_basic_info input {
+	flex: 1 1 auto;
+	flex-grow: 1;
+}
+
+#card_info_panel_version_info {
+	border-top: 2px dashed rgba(0, 0, 0, 0.6);
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	height: fit-content;
+	display: flex;
+
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+	gap: 1vmin;
+	padding: 1vmin;
+}
+#card_info_panel_version_info > p {
+	border-left: 5px solid rgba(138, 187, 216, 0.6);
+}
+#card_info_panel_version_info_files, #card_info_panel_version_info_images {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 3vmin;
+	padding: 1vmin;
+	justify-content: center;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+}
+#card_info_panel_version_info_files > div {
+	position: relative;
+	/*display: flex <--> none apply by card_manager.js*/
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	width: fit-content;
+	height: fit-content;
+	width: 100%;
+	gap:1vmin;
+	padding: 1vmin;
+	border-bottom: 2px dashed white;
+}
+#card_info_panel_version_info_files > div > * {
+	flex: 1 1 auto;
+	flex-grow: 1;
+}
+
+#card_info_panel_version_info_images > div {
+	position : relative;
+	flex : 0 1 auto;
+	width: fit-content;
+	height: fit-content;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-flow: column;
+	align-items: center;
+}
+
+#card_info_panel_version_info_files  > div > input,
+#card_info_panel_version_info_files  > div > button,
+#card_info_panel_version_info_images > div > input,
+#card_info_panel_version_info_images > div > button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+
+

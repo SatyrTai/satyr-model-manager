@@ -1,0 +1,150 @@
+.settings_container {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: auto;
+	height: 100%;
+}
+.settings_container * {
+	animation-name: none;
+}
+
+.settings_container input {
+	border: none;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 2vmin;
+}
+
+.settings_container input[type="checkbox"] {
+	min-width: 3vmin;
+	min-height: 3vmin;
+}
+
+#settings_main_panel {
+	display: inline;
+	justify-content: center;
+	background-color: #DDD;
+	box-shadow: 0 0 var(--card-border-size-half) var(--card-border-size-quarter) rgba(0, 0, 0, 0.4);
+	overflow: auto;
+	resize: horizontal;
+	min-width: 33vw;
+	max-width: 66vw;
+}
+
+#settings_main_panel div, #settings_main_panel p, .settings_container input {
+	padding : var(--card-border-size);
+	margin: var(--card-border-size);
+	border-radius: var(--card-border-size);
+	
+}
+
+#settings_main_panel div {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color:rgba(255, 255, 255, 0.2);
+	border-radius: var(--card-border-size-half);
+	box-shadow: 0 0 var(--card-border-size-half) var(--card-border-size-quarter) rgba(0, 0, 0, 0.4);
+}
+
+#settings_main_panel div > p {
+	width: fit-content;
+	height: fit-content;
+	border-left: 1vmin solid rgb(0, 158, 137);
+	border-radius: 0;
+	font-size: 2vmin;
+}
+
+#settings_main_panel > div > p {
+	border-color: rgb(66, 66, 66);
+}
+
+#settings_main_panel i {
+	font-size: 4vmin;
+}
+
+.settingPanelObject > .addButton,
+ .settingPanelObject > * > .deleteButton
+{
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	background: none;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	z-index: 1;
+	background: none;
+}
+.settingPanelObject > .addButton {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	color: rgb(63, 63, 63);
+
+	border-radius: inherit;
+	margin: inherit;
+	box-shadow: inherit;
+}
+.settingPanelObject > * > .deleteButton {
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: rgb(63, 63, 63);
+}
+
+.settingPanelArray > .addButton, 
+.settingPanelArray > * > .deleteButton
+{
+	position: absolute;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	background: none;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	z-index: 1;
+}
+.settingPanelArray > .addButton {
+	font-size: 3.5vmin;
+	color: rgb(85, 139, 255);
+	left: 0;
+	bottom: 0;
+}
+.settingPanelArray > * > .deleteButton {
+	color:rgb(255, 93, 134);
+	right: 0;
+	top: 0;
+}
+
+.settings_control_panel {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column-reverse;
+}
+.settings_control_panel input {
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+	margin: 1vmin;
+	box-shadow: 0 0 calc(var(--card-border-size)/2) calc(var(--card-border-size)/4) rgba(0, 0, 0, 0.4);
+}
+.settings_control_panel input:hover {
+	background-color: #45a049;
+}
+  

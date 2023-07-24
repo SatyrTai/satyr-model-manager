@@ -1,0 +1,124 @@
+.control_container {
+	/*
+	position: absolute;
+	top: var(--card-border-size);
+	right: var(--card-border-size);
+	left: calc(100% - (var(--card-border-size) + var(--controll-bar-size)));
+	bottom: var(--card-border-size);
+	*/
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: right;
+
+	grid-area: control;
+}
+
+.control_container * {
+	box-sizing: border-box;
+	outline : none;
+}
+
+.control_container > .control_container_utils {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: right;
+	gap: var(--card-border-size);
+}
+
+.control_container button {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	border: none;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	font-size: var(--card-border-size);
+	cursor: pointer;
+	padding: var(--card-border-size);
+	border-radius: 50%;
+	box-shadow: 0 0 var(--card-border-size) calc(var(--card-border-size)/2) rgba(0, 0, 0, 0.2);
+	background-color:var(--background-color);
+	color:rgb(10, 27, 41);
+	
+	transition: 250ms color;
+	-webkit-transition: 250ms color;
+	-moz-transition: 250ms color;
+	-ms-transition: 250ms color;
+	-o-transition: 250ms color;
+}
+.control_container button.glow.animation_pack_on{
+	color: rgb(0, 154, 214);
+	box-shadow: 0 0 1vmin 0.5vmin rgb(51, 121, 161);
+}
+/*
+.control_container button:hover {
+	background-color: rgb(12, 70, 85);
+}
+*/
+
+.control_container_card_size {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	flex-grow: 99;
+	justify-content: center;
+
+	padding: var(--card-border-size);
+	border-radius: var(--card-border-size);
+	box-shadow: 0 0 var(--card-border-size) calc(var(--card-border-size)/2) rgba(0, 0, 0, 0.2);
+	background-color:var(--background-color);
+
+	position: relative;
+	/*
+	border: 2px solid black;*/
+}
+
+.control_container_card_size > input[type="range"] {
+	width: var(--card-border-size);
+	height: auto;
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* Chromium */
+}
+
+.control_container_card_size > input[type="range"]:active ~ div {
+	opacity: 1;
+}
+
+.control_container_card_size > div {
+	width: fit-content;
+	height: fit-content;
+	padding: var(--card-border-size);
+	border-radius: 50% 50% 0% 50%;
+	background-color:whitesmoke;
+	box-shadow: 0 0 var(--card-border-size) calc(var(--card-border-size)/2) rgba(0, 0, 0, 0.2);
+	aspect-ratio: 1;
+	/*
+	https://www.w3schools.com/cssref/pr_class_position.php
+	absolute : 	The element is positioned relative to its first positioned (not static) ancestor element
+	*/
+	position: absolute;
+	bottom: 80%;
+	right: 65%;
+	opacity: 0;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+.control_container_card_size > div > output {
+	font-size: 150%;
+}
