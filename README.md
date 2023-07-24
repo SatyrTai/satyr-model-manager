@@ -9,7 +9,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          - https://github.com/SatyrTai/satyr-model-manager
       - Manually clone this repo to the extension folder or download the zip.
 
-## How To Use
+## How To Use🤪
 ### As extension
    <ul>
       
