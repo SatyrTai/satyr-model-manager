@@ -4,20 +4,29 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
 <br><img src="/web/imgs/no-preview.jpg" width="250">
 
 ## How to install
-- There are some options you can choose to install this extension
-   - Open the extension tab and go to "from url" tab, copy-paste the url of this repo and click install.
-   - Manually clone this repo to the extension folder or download the zip.
+   - There are some options you can choose to install this extension
+      - Open the extension tab and go to "from url" tab, copy-paste the url of this repo and click install.
+      - Manually clone this repo to the extension folder or download the zip.
 
 ## How To Use!!!!!
-   ### As extension
-   <details>
-   <summary>Trigger words and Most trained tags</summary>
-   <img src="/web/imgs/no-preview.jpg" width="350">
-   </details>
-   <details>
-   <summary>Prompt examples and Descriptions</summary>
-   <img src="/web/imgs/no-preview.jpg" width="350">
-   </details>
+### As extension
+   <ul>
+   <li>
+      <details>
+      <summary>Trigger words and Most trained tags</summary>
+      <img src="/web/imgs/no-preview.jpg" width="350">
+      </details>
+   </li>
+   <li>
+      <details>
+      <summary>Prompt examples and Descriptions</summary>
+      <img src="/web/imgs/no-preview.jpg" width="350">
+      </details>
+   </li>
+   </ul>
+   
+   
+   
  
 ## Function
 
