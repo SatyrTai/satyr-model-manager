@@ -5,8 +5,8 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
 
 ## How to install
 - There are some options you can choose to install this extension
-- Open the extension tab and go to "from url" tab, copy-paste the url of this repo and click install.
-- Manually clone this repo to the extension folder or download the zip.
+   - Open the extension tab and go to "from url" tab, copy-paste the url of this repo and click install.
+   - Manually clone this repo to the extension folder or download the zip.
 
 ## How To Use!!!!!
    ### As extension
