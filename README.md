@@ -11,7 +11,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
 
    ### Meaning of emoji 
    👌 <-- Completed<br>
-   🤪 <-- Working on it.... if you want it let me know<br>
+   🤪 <-- Working on it
 
    
    ### As extension
