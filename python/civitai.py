@@ -1,10 +1,10 @@
 import os
-import file_utils
-import civitai_utils
-import variables
+import python.file_utils as file_utils
+import python.civitai_utils as civitai_utils
+import python.variables as variables
 import math
-import download
-import utils
+import python.download as download
+import python.utils as utils
 import threading
 import traceback
 from pydantic import BaseModel
@@ -440,7 +440,7 @@ class CivitaiTask(BaseModel):
             self.rlock.release()
 
     def make_record(self):
-        import asset_record
+        import python.asset_record as asset_record
         for f in self.files :
             record = asset_record.AssetRecord(
                 full_path = f.downloadTask.saveTo,

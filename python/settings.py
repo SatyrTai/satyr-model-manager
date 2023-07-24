@@ -1,9 +1,9 @@
 from pydantic import BaseModel
 import threading
-import file_utils
-import utils
+import python.file_utils as file_utils
+import python.utils as utils
 import json
-import download
+import python.download as download
 
 print("settings : ------------------------------------------")
 

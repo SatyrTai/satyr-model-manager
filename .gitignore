@@ -1,6 +1,6 @@
 
 /localFiles
-/matching.py
-
+/python/matching.py
 /web/testing.html
-/web/testing.js
+/web/javascript/testing.js
+/web/css/testing.css

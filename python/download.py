@@ -2,11 +2,11 @@
 import threading
 import queue
 import types
-import file_utils
+import python.file_utils as file_utils
 import os
 import requests
 import math
-import utils
+import python.utils as utils
 import time
 from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures import Future

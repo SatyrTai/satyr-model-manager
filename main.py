@@ -1,9 +1,9 @@
 
 import os
 import sys
-import utils
-import variables
-import file_utils
+import python.utils as utils
+import python.variables as variables
+import python.file_utils as file_utils
 
 user_data_dir = os.path.join(__file__, "..\\")
 if "--user-data-dir" in sys.argv:
@@ -35,10 +35,10 @@ from fastapi.encoders import jsonable_encoder
 from fastapi import concurrency
 from pydantic import BaseModel
 
-from variables import Settings
+from python.variables import Settings
 import webbrowser
-import civitai
-import civitai_utils
+import python.civitai as civitai
+import python.civitai_utils as civitai_utils
 
 import contextlib
 import time
@@ -84,7 +84,7 @@ app = FastAPI(
 app.mount("/web", StaticFiles(directory="web"), name="web")
 app.mount("/javascript", StaticFiles(directory="javascript"), name="javascript")
 
-import download
+import python.download as download
 download.init(
     variables.settings_object.threadWorkers, 
     variables.settings_object.chunk_size,
@@ -233,7 +233,7 @@ async def task_control(n_task : civitai.CivitaiTask) :
     await task.setDownloading(True)
     return {}
 
-import model_manager_card_click
+import python.model_manager_card_click as model_manager_card_click
 @app.post("/model_manager_card_click_post")
 async def card_click(args : model_manager_card_click.CardClick_ARGS):
     return await model_manager_card_click.card_click(args)

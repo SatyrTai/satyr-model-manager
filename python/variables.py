@@ -1,7 +1,7 @@
 import os
 import sys
 #import appdirs
-import file_utils
+import python.file_utils as file_utils
 
 print("variables : ------------------------------------------")
 
@@ -24,14 +24,14 @@ localFilesPath : str = None
 jsonFilesPath : str = None
 
 # settings---------------------------------------------------------------
-import settings
-from settings import Settings
+import python.settings as settings
+from python.settings import Settings
 settingsJsonFullPath : str = None
 settings_object : Settings = None
 #print(settings_object.json(indent=4))
 # asset hash ----------------------------------------------------------------
-import asset_record
-from asset_record import AssetRecordManager
+import python.asset_record as asset_record
+from python.asset_record import AssetRecordManager
 asset_record_full_path : str = None
 asset_record_manager : AssetRecordManager = None
 #print(asset_record_manager.json(indent=4))

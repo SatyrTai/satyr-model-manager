@@ -1,7 +1,7 @@
 import json
 import requests
-import variables
-import file_utils
+import python.variables as variables
+import python.file_utils as file_utils
 import re
 
 def changeAllExistPreview(nWidth : int):

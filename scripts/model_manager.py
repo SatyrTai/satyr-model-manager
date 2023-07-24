@@ -26,7 +26,7 @@ if user_data_dir is None :
     user_data_dir = basedir
 user_data_dir = os.path.realpath(user_data_dir)
 print("user_data_dir : " + user_data_dir)
-import variables
+import python.variables as variables
 variables.load(user_data_dir)
 
 is_bootstrap = False
@@ -40,7 +40,7 @@ from modules import sd_vae
 from modules import shared
 from modules import paths
 from modules.upscaler import Upscaler
-import utils
+import python.utils as utils
 
 #https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/modules/modelloader.py
 def varibales_settings_setup() :
@@ -134,7 +134,7 @@ def paste_func(prompt):
 
     return res
 
-import model_manager_card_click
+import python.model_manager_card_click as model_manager_card_click
 def call_on_start(demo: Optional[Blocks], app: FastAPI):
     varibales_settings_setup()
     '''

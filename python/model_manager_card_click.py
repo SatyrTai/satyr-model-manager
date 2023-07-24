@@ -1,10 +1,10 @@
 from fastapi import concurrency
 from pydantic import BaseModel
 
-import civitai_utils
-import asset_record
-import variables
-import file_utils
+import python.civitai_utils as civitai_utils
+import python.asset_record as asset_record
+import python.variables as variables
+import python.file_utils as file_utils
 import json
 
 
