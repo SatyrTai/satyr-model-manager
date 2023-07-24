@@ -15,20 +15,30 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
    <li>
       <details>
       <summary>Trigger words and Most trained tags</summary>
+      <ul>
+         <li>Click on the model card in the webui extra page to call this extension</li>
+         <li>Afterwards, a notification card will appear in the bottom right corner of your webui window</li>
+         <li>If the information is present, the notification card will contain the trigger words and the most trained tags</li>
+      </ul>
       <picture>
          <img src="/web/imgs/no-preview.jpg" width="350">
       </picture>
-      <br>
-      [Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
       </details>
    </li>
    
    <li>
       <details>
       <summary>Prompt examples and Descriptions</summary>
-      <picture>
-         <img src="/web/imgs/no-preview.jpg" width="350">
-      </picture>
+      <ul>
+         <li>Click bottom right notice card to open popup window</li>
+         <li>Click white dot at top left of the image to apply prompt example (Only txt2img)</li>
+         <li>Click blue button at top left of the popup window to visite civitai site of the model</li>
+         <li>Scroll down to read Model Description and Model version Description</li>
+      </ul>
+      <br>
+      <picture><img src="/web/imgs/no-preview.jpg" width="350"></picture>
+      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
       </details>
    </li>
    
