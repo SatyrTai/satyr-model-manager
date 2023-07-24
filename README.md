@@ -11,23 +11,29 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
 ## How To Use!!!!!
 ### As extension
    <ul>
+      
    <li>
       <details>
       <summary>Trigger words and Most trained tags</summary>
-      <img src="/web/imgs/no-preview.jpg" width="350">
+      <picture>
+         <img src="/web/imgs/no-preview.jpg" width="350">
+      </picture>
+      <br>
+      [Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
       </details>
    </li>
+   
    <li>
       <details>
       <summary>Prompt examples and Descriptions</summary>
-      <img src="/web/imgs/no-preview.jpg" width="350">
+      <picture>
+         <img src="/web/imgs/no-preview.jpg" width="350">
+      </picture>
       </details>
    </li>
+   
    </ul>
-   
-   
-   
- 
+
 ## Function
 
    ### Meaning of emoji 
