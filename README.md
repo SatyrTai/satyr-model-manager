@@ -69,7 +69,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
    
    </ul>
 
-### As application
+### As application (Must run as extension once)
    <ul>
       
    <li>
