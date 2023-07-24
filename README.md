@@ -30,11 +30,9 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
    
    <li>
       <details>
-      <summary>Prompt examples and Descriptions</summary>
+      <summary>View Prompt examples and Descriptions</summary>
       <ul>
          <li>Click bottom right notice card to open popup window</li>
-         <li>Click white dot at top left of the image to apply prompt example (Only txt2img)</li>
-         <li>Click blue button at top left of the popup window to visite civitai site of the model</li>
          <li>Scroll down to read Model Description and Model version Description</li>
       </ul>
       <br>
@@ -43,6 +41,103 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
       </details>
    </li>
    
+   <li>
+      <details>
+      <summary>Apply Prompt example (Only txt2img)</summary>
+      <ul>
+         <li>Click bottom right notice card to open popup window</li>
+         <li>Click white dot at top left of the image to apply prompt example (Only txt2img)</li>
+      </ul>
+      <br>
+      <picture><img src="/web/imgs/no-preview.jpg" width="350"></picture>
+      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      </details>
+   </li>
+   
+   <li>
+      <details>
+      <summary>Visite model page at Civitai site</summary>
+      <ul>
+         <li>Click bottom right notice card to open popup window</li>
+         <li>Click blue button at top left of the popup window to visite civitai site of the model</li>
+      </ul>
+      <br>
+      <picture><img src="/web/imgs/no-preview.jpg" width="350"></picture>
+      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      </details>
+   </li>
+
+
+   
+   </ul>
+
+### As application
+   <ul>
+      
+   <li>
+      <details>
+      <summary>Download Model From Civitai</summary>
+      <ul>
+         <li>Copy(Ctrl+C) the Model page URL from your browser such as https://civitai.com/models/71961/fast-negative-embedding-fastnegativev2</li>
+         <li>Paste(Ctrl+V) the Model page URL to the page and enter.</li>
+         <li>Download Card show up and it is downloading</li>
+      </ul>
+      <picture>
+         <img src="/web/imgs/no-preview.jpg" width="350">
+      </picture>
+      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      </details>
+   </li>
+
+   <li>
+      <details>
+      <summary>Remove a download request and delete all related</summary>
+      <ul>
+         <br>
+         <li>If download not complete.</li>
+         <li>Just click the close button on download card</li>
+         <br>
+         <li>If download has completed.</li>
+         <li>Click the lock button</li>
+         <li>Delete button will show up top left of the download card</li>
+      </ul>
+      <picture>
+         <img src="/web/imgs/no-preview.jpg" width="350">
+      </picture>
+      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      </details>
+   </li>
+   
+   <li>
+      <details>
+      <summary>Change Preview (before download complete)</summary>
+      <ul>
+         <li>Download Card has two arrow buttons</li>
+         <li>Click arrow buttons to change preview</li>
+      </ul>
+      <picture>
+         <img src="/web/imgs/no-preview.jpg" width="350">
+      </picture>
+      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      </details>
+   </li>
+   
+   <li>
+      <details>
+      <summary>Change Preview (after download complete)</summary>
+      <ul>
+         <li>Download card has a lock button</li>
+         <li>Click it ! </li>
+         <li>Arrow buttons show up</li>
+         <li>Click arrow buttons to change preview</li>
+      </ul>
+      <picture>
+         <img src="/web/imgs/no-preview.jpg" width="350">
+      </picture>
+      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      </details>
+   </li>
+      
    </ul>
 
 ## Function
