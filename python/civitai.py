@@ -186,23 +186,30 @@ class CivitaiTask(BaseModel):
         self.model_type_path = civitai_utils.get_path(self.model_type)
         fileNames = []
         files_json = self.version_json["files"]
+        only_one_file = len(files_json) == 0
+        first_model_file = None
         for file in files_json:
             file_path = None
             imgs_path = self.model_type_path
             auto_active = False
             file_type = file['type']
+            is_first_file = files_json[0] is file
             match file_type :
                 case 'Model' :
-                    auto_active = files_json[0] is file
+                    if first_model_file is None : 
+                        first_model_file = file
+                    auto_active = only_one_file or is_first_file or first_model_file == file
+                    file_path = civitai_utils.get_path(self.model_type)
+                case 'Archive' :
+                    if first_model_file is None : 
+                        first_model_file = file
+                    auto_active = only_one_file or is_first_file or first_model_file == file
                     file_path = civitai_utils.get_path(self.model_type)
                 case 'VAE' :
                     auto_active = True
                     file_path = civitai_utils.get_path(file_type)
-                case 'Archive' :
-                    auto_active = files_json[0] is file
-                    file_path = civitai_utils.get_path(self.model_type)
                 case 'Training Data' :
-                    auto_active = False
+                    auto_active = only_one_file 
                     file_path = civitai_utils.get_path(file_type)
                 case _:
                     file_path = None

@@ -232,18 +232,21 @@ class CardInfoListItem_Images extends CardInfoListItem {
     set(json) {
         super.set(json)
         var downloadTask = json["downloadTask"]
+        var currentValue = get_image_scale_from_url(downloadTask['url'])
+        currentValue = parseInt(currentValue)
+        var preferredValue = 450
+        if (preferredValue >= currentValue) preferredValue = currentValue
         this.img.style.display = "initial"
-        this.img.src = downloadTask['url']
+        this.img.src = get_specific_scale_image(downloadTask['url'], preferredValue)
         this.img.title = json["file_name"]
 
-        var current_value = get_image_scale_from_url(downloadTask['url'])
         var maxValue = json["max_width"]
         var minValue = 100
         //var minValue = window.screen.availWidth / 8
         if (minValue >= maxValue) {minValue = maxValue}
         this.scale.min = minValue
         this.scale.max = json["max_width"]
-        this.set_scale(current_value)
+        this.set_scale(currentValue)
 
         this.name.style.display = "initial"
         this.name.innerText = json["file_name"]

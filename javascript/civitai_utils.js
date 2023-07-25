@@ -4,7 +4,8 @@ const apiURL = "https://civitai.com/api/v1"
 const targetString_PreferredModelVersionID = "modelVersionId="
 
 function get_specific_scale_image(url, width) {
-    return url.replace("width=450", "width=" + width)
+    var old_scale = get_image_scale_from_url(url)
+    return url.replace("width="+old_scale, "width=" + String(width))
 }
 
 function get_model_page_url_modelVersionId(page_id, modelVersionId) {
