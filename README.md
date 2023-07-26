@@ -9,7 +9,6 @@ As extension
 <br>
 As application
 <br><img src="/README/downloader_preview.png">
-<br><img src="/README/extension_preview.png"><img src="/README/extension_preview_model_info.png">
 
 ## How to install
    - There are some options you can choose to install this extension
