@@ -17,7 +17,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
       <details>
       <summary>Trigger words and Most trained tags</summary>
       <ul>
-         <li>Click on the model card in the webui extra page to call this extension</li>
+         <li>Click on the model card in the webui extra page</li>
          <li>Afterwards, a notification card will appear in the bottom right corner of your webui window</li>
          <li>If the information is present, the notification card will contain the trigger words and the most trained tags</li>
       </ul>
