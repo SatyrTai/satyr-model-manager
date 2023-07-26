@@ -45,6 +45,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
       <ul>
          <li>Click bottom right notice card to open popup window</li>
          <li>Click white dot at top left of the image to apply prompt example (Only txt2img)</li>
+         <li>No white dot mean no prompts of the image in api json</li>
       </ul>
       <br>
       <img src="/README/extension_preview_model_info.png">
