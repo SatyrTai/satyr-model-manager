@@ -1,12 +1,18 @@
 # satyr-model-manager
-Get trigger words, Most trained words, also model downloader.<br>
+Get trigger words, Most trained words, Model Description, Apply prompt example without the image, download model from civitai api.<br>
 an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-diffusion-webui)
-<br><img src="/web/imgs/no-preview.jpg" width="250">
+<br>
+As extension
+<br><img src="/README/extension_preview.png"><img src="/README/extension_preview_model_info.png">
+
+<br>
+As application
+<br><img src="/README/downloader_preview.png">
 
 ## How to install
    - There are some options you can choose to install this extension
       - Open the extension tab and go to "from url" tab, copy-paste the url of this repo and click install.
-         - [https://github.com/SatyrTai/satyr-model-manager](https://github.com/SatyrTai/satyr-model-manager.git)
+         - [https://github.com/SatyrTai/satyr-model-manager.git](https://github.com/SatyrTai/satyr-model-manager.git)
       - Manually clone this repo to the extension folder or download the zip.
 
 ## How To Use🤪
@@ -17,14 +23,14 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
       <details>
       <summary>Trigger words and Most trained tags</summary>
       <ul>
-         <li>Click on the model card in the webui extra page to call this extension</li>
+         <li>Click on the model card in the webui extra page</li>
          <li>Afterwards, a notification card will appear in the bottom right corner of your webui window</li>
          <li>If the information is present, the notification card will contain the trigger words and the most trained tags</li>
+         <li>Apply trigger words and most trained labels with a single click</li>
+         <li>trigger words green underline</li>
+         <li>most trained tags orange underline</li>
       </ul>
-      <picture>
-         <img src="/web/imgs/no-preview.jpg" width="350">
-      </picture>
-      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      <img src="/README/extension_preview.png">
       </details>
    </li>
    
@@ -36,8 +42,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>Scroll down to read Model Description and Model version Description</li>
       </ul>
       <br>
-      <picture><img src="/web/imgs/no-preview.jpg" width="350"></picture>
-      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      <img src="/README/extension_preview_model_info.png">
       </details>
    </li>
    
@@ -47,10 +52,10 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
       <ul>
          <li>Click bottom right notice card to open popup window</li>
          <li>Click white dot at top left of the image to apply prompt example (Only txt2img)</li>
+         <li>No white dot mean no prompts of the image in api json</li>
       </ul>
       <br>
-      <picture><img src="/web/imgs/no-preview.jpg" width="350"></picture>
-      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      <img src="/README/extension_preview_model_info.png">
       </details>
    </li>
    
@@ -62,8 +67,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>Click blue button at top left of the popup window to visite civitai site of the model</li>
       </ul>
       <br>
-      <picture><img src="/web/imgs/no-preview.jpg" width="350"></picture>
-      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      <img src="/README/extension_preview_model_info.png">
       </details>
    </li>
    
@@ -93,10 +97,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>Download Card show up and it is downloading</li>
          <li>Model is automatic located to path recognized by webui</li>
       </ul>
-      <picture>
-         <img src="/web/imgs/no-preview.jpg" width="350">
-      </picture>
-      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      <img src="/README/downloader_preview.png">
       </details>
    </li>
    
@@ -110,8 +111,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>The downloaded image is located next to the model</li>
       </ul>
       <br>
-      <picture><img src="/web/imgs/no-preview.jpg" width="350"></picture>
-      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      <img src="/README/downloader_preview.png">
       </details>
    </li>
 
@@ -127,10 +127,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>Click the lock button</li>
          <li>Delete button will show up top left of the download card</li>
       </ul>
-      <picture>
-         <img src="/web/imgs/no-preview.jpg" width="350">
-      </picture>
-      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      <img src="/README/downloader_preview.png">
       </details>
    </li>
    
@@ -141,10 +138,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>Download Card has two arrow buttons</li>
          <li>Click arrow buttons to change preview</li>
       </ul>
-      <picture>
-         <img src="/web/imgs/no-preview.jpg" width="350">
-      </picture>
-      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      <img src="/README/downloader_preview.png">
       </details>
    </li>
    
@@ -157,10 +151,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>Arrow buttons show up</li>
          <li>Click arrow buttons to change preview</li>
       </ul>
-      <picture>
-         <img src="/web/imgs/no-preview.jpg" width="350">
-      </picture>
-      <br>[Link](https://github.com/SatyrTai/satyr-model-manager/web/imgs/no-preview.jpg)
+      <img src="/README/downloader_preview.png">
       </details>
    </li>
       
