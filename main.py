@@ -48,9 +48,7 @@ import threading
 # step 1
 # TODO : blurhash
 # TODO : card info -> keep update informations
-# TODO : card error sign -> retry ?
-# TODO : notification click -> add settings and re-input the url with same args <- first
-# TODO : extra imgs -> user control
+# TODO : notification click -> add settings and re-input the url with same args
 # TODO : update settings -> preview size , accept file suffix , (remove) maxImageCount_Download <- first
 # TODO : easy setting for download_speed_limit_bytes, javascript_page_update_delta <- first
 # TODO : check target path disk space available, before download <- first
@@ -58,24 +56,9 @@ import threading
 # step 2
 # TODO : model management on disk
 # TODO : keep update
-# TODO : check model hashcode
-# TODO : fillup preview
 # TODO : follow user -> new Model infomation
 # TODO : bookmark -> auto delete
 
-# step 3
-# TODO : modifies webui <- first
-
-
-#https://fastapi.tiangolo.com/
-#block fastapi docs redoc
-#http://127.0.0.1:8762/docs
-#http://127.0.0.1:8762/redoc
-
-#網路安全 -> 網頁前端
-#https://dev.to/jankapunkt/how-to-mess-up-your-javascript-code-like-a-boss-pa9
-#https://rambox.app/blog/how-to-inject-javascript-code-for-advanced-website-and-apps-manipulation/
-#https://medium.com/hannah-lin/%E5%BE%9E%E6%94%BB%E6%93%8A%E8%87%AA%E5%B7%B1%E7%B6%B2%E7%AB%99%E5%AD%B8-xss-cross-site-scripting-%E5%8E%9F%E7%90%86%E7%AF%87-fec3d1864e42
 
 app = FastAPI(
     docs_url=None, 
@@ -275,14 +258,3 @@ if __name__ == "__main__" :
         print("server.run_in_thread() End")
     finally :
         variables.call_on_end()
-
-#https://github.com/encode/uvicorn/issues/742
-#https://stackoverflow.com/questions/70632673/fastapi-is-not-loading-static-files
-#https://huggingface.co/spaces/templates/fastapi-uvicorn/blob/main/modules/app.py
-#https://blog.csdn.net/leoppeng/article/details/119384097
-
-#https://www.youtube.com/watch?v=ATEGpAb8GWI&ab_channel=Pingcode
-#https://stackoverflow.com/questions/64901945/how-to-send-a-progress-of-operation-in-a-fastapi-app
-#https://fastapi.tiangolo.com/advanced/websockets/
-
-#https://plainenglish.io/blog/3-ways-to-handle-errors-in-fastapi-that-you-need-to-know-e1199e833039

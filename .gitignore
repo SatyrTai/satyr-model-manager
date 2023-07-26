@@ -1,6 +1,6 @@
 __pycache__/
 *.pyc
+references/
 testing.*
 /localFiles
 /python/matching.py
-/github_readme_references.txt
