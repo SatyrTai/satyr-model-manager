@@ -20,6 +20,7 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>Click on the model card in the webui extra page</li>
          <li>Afterwards, a notification card will appear in the bottom right corner of your webui window</li>
          <li>If the information is present, the notification card will contain the trigger words and the most trained tags</li>
+         <li>Apply trigger words and most trained labels with a single click</li>
          <li>trigger words green underline</li>
          <li>most trained tags orange underline</li>
       </ul>
