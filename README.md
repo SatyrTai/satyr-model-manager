@@ -1,8 +1,7 @@
 # satyr-model-manager
 Get trigger words, Most trained words, also model downloader.<br>
 an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-diffusion-webui)
-<br><img src="/README/extension_preview.png" width="500">
-<br><img src="/README/extension_preview_model_info.png" width="500">
+<br><img src="/README/extension_preview.png" width="500"><img src="/README/extension_preview_model_info.png" width="500">
 
 ## How to install
    - There are some options you can choose to install this extension
