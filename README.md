@@ -1,6 +1,7 @@
 # satyr-model-manager
 Get trigger words, Most trained words, Model Description, Apply prompt example without the image, download model from civitai api.<br>
 an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+
 <br>
 As extension
 <br><img src="/README/extension_preview.png"><img src="/README/extension_preview_model_info.png">
@@ -8,6 +9,7 @@ As extension
 <br>
 As application
 <br><img src="/README/downloader_preview.png">
+<br><img src="/README/extension_preview.png"><img src="/README/extension_preview_model_info.png">
 
 ## How to install
    - There are some options you can choose to install this extension
