@@ -97,7 +97,11 @@ As application
          <li>Download Card show up and it is downloading</li>
          <li>Model is automatic located to path recognized by webui</li>
       </ul>
+<<<<<<< HEAD
       <img src="/README/downloader_preview.png">
+=======
+         <img src="/web/imgs/no-preview.jpg">
+>>>>>>> 1e4dc9dc3ab2074323df2b005c5a0748a64e155a
       </details>
    </li>
    
@@ -111,7 +115,11 @@ As application
          <li>The downloaded image is located next to the model</li>
       </ul>
       <br>
+<<<<<<< HEAD
       <img src="/README/downloader_preview.png">
+=======
+      <img src="/web/imgs/no-preview.jpg">
+>>>>>>> 1e4dc9dc3ab2074323df2b005c5a0748a64e155a
       </details>
    </li>
 
@@ -127,7 +135,11 @@ As application
          <li>Click the lock button</li>
          <li>Delete button will show up top left of the download card</li>
       </ul>
+<<<<<<< HEAD
       <img src="/README/downloader_preview.png">
+=======
+         <img src="/web/imgs/no-preview.jpg">
+>>>>>>> 1e4dc9dc3ab2074323df2b005c5a0748a64e155a
       </details>
    </li>
    
@@ -138,7 +150,11 @@ As application
          <li>Download Card has two arrow buttons</li>
          <li>Click arrow buttons to change preview</li>
       </ul>
+<<<<<<< HEAD
       <img src="/README/downloader_preview.png">
+=======
+         <img src="/web/imgs/no-preview.jpg">
+>>>>>>> 1e4dc9dc3ab2074323df2b005c5a0748a64e155a
       </details>
    </li>
    
@@ -151,7 +167,11 @@ As application
          <li>Arrow buttons show up</li>
          <li>Click arrow buttons to change preview</li>
       </ul>
+<<<<<<< HEAD
       <img src="/README/downloader_preview.png">
+=======
+         <img src="/web/imgs/no-preview.jpg">
+>>>>>>> 1e4dc9dc3ab2074323df2b005c5a0748a64e155a
       </details>
    </li>
       
