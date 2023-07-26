@@ -1,7 +1,17 @@
 # satyr-model-manager
-Get trigger words, Most trained words, also model downloader.<br>
+Get trigger words, Most trained words, Model Description, Apply prompt example without the image, download model from civitai api.<br>
 an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+<<<<<<< HEAD
+<br>
+As extension
 <br><img src="/README/extension_preview.png"><img src="/README/extension_preview_model_info.png">
+
+<br>
+As application
+<br><img src="/README/downloader_preview.png">
+=======
+<br><img src="/README/extension_preview.png"><img src="/README/extension_preview_model_info.png">
+>>>>>>> 1e4dc9dc3ab2074323df2b005c5a0748a64e155a
 
 ## How to install
    - There are some options you can choose to install this extension
@@ -91,7 +101,11 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>Download Card show up and it is downloading</li>
          <li>Model is automatic located to path recognized by webui</li>
       </ul>
+<<<<<<< HEAD
+      <img src="/README/downloader_preview.png">
+=======
          <img src="/web/imgs/no-preview.jpg">
+>>>>>>> 1e4dc9dc3ab2074323df2b005c5a0748a64e155a
       </details>
    </li>
    
@@ -105,7 +119,11 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>The downloaded image is located next to the model</li>
       </ul>
       <br>
+<<<<<<< HEAD
+      <img src="/README/downloader_preview.png">
+=======
       <img src="/web/imgs/no-preview.jpg">
+>>>>>>> 1e4dc9dc3ab2074323df2b005c5a0748a64e155a
       </details>
    </li>
 
@@ -121,7 +139,11 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>Click the lock button</li>
          <li>Delete button will show up top left of the download card</li>
       </ul>
+<<<<<<< HEAD
+      <img src="/README/downloader_preview.png">
+=======
          <img src="/web/imgs/no-preview.jpg">
+>>>>>>> 1e4dc9dc3ab2074323df2b005c5a0748a64e155a
       </details>
    </li>
    
@@ -132,7 +154,11 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>Download Card has two arrow buttons</li>
          <li>Click arrow buttons to change preview</li>
       </ul>
+<<<<<<< HEAD
+      <img src="/README/downloader_preview.png">
+=======
          <img src="/web/imgs/no-preview.jpg">
+>>>>>>> 1e4dc9dc3ab2074323df2b005c5a0748a64e155a
       </details>
    </li>
    
@@ -145,7 +171,11 @@ an extension of stable-diffusion-webui (https://github.com/AUTOMATIC1111/stable-
          <li>Arrow buttons show up</li>
          <li>Click arrow buttons to change preview</li>
       </ul>
+<<<<<<< HEAD
+      <img src="/README/downloader_preview.png">
+=======
          <img src="/web/imgs/no-preview.jpg">
+>>>>>>> 1e4dc9dc3ab2074323df2b005c5a0748a64e155a
       </details>
    </li>
       
